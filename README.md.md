@@ -8,9 +8,6 @@ A portfolio project that uses **Python (pandas), SQL (PostgreSQL), Excel and Pow
 
 ![Market overview](images/page1_market_overview.png)
 
-- [View the full dashboard as a PDF](images/dashboard.pdf)
-- The Power BI file (.pbix) can be downloaded from the **Releases** section of this repository.
-
 ## Summary
 
 I analysed 91,954 London Airbnb listings from Inside Airbnb (data collected in September 2026). I wanted to answer practical questions: Where do hosts charge the most? Which boroughs are the busiest? Who controls the supply? Do superhosts really charge more?
@@ -75,8 +72,6 @@ I loaded the cleaned files with Power Query, merged them, added an occupancy col
 
 - `listings` connects to `reviews_clean` and `availability_per_listing` by listing ID.
 - A `Calendar` date table (created with DAX) connects to `reviews_clean` and `availability_daily` by date.
-
-![Data model](images/data_model.png)
 
 **Main measures:** total listings, median nightly price, occupancy rate, total reviews, reviews change vs previous month, hosts with 6+ listings, their share of listings, superhost share, average rating, and booked or blocked rate.
 
